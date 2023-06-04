@@ -1,5 +1,5 @@
 
-![Banner](https://drive.google.com/file/d/1iS3uh5wDqZ27Yihq8XM9-gJK1JsK2WpI/view?usp=sharing)
+# Accident Severity Prediction Using Decision Tree Classifier
 
 
 
