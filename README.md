@@ -3,7 +3,7 @@
 
 
 
-In this project I analyzed Accident Data from Accident Research Institute in Bangladesh from 2017 to 2020. Using this dataset I have prepared a model using Supervised Machine Learning Technics, Decision Tree.
+In this project I analyzed Accident Data from Accident Research Institute in Bangladesh with recent datasets. Using this dataset I have prepared a model using Supervised Machine Learning Technics, Decision Tree.
 
 
 # Workflow
@@ -35,7 +35,7 @@ In this project I analyzed Accident Data from Accident Research Institute in Ban
 #### 8. Performance Evaluation from Classification Report
     - Sensitivity, Specificity, AUC, Recall, Precision, f1 all are evaluated
 #### 9. Random Oversampling for Target Variables Minority class to mitigate class imbalances
-    - Oversampling ratio = 1 : 3X, Majority Class (1184 records) and Minority Class (314 records= X) initially
+    - Oversampling for Minority Class with different combination, Majority Class (1184 records) and Minority Class (314 records)
 #### 10. Repeat the process from step- 4 untill good model performance
 
 ## Acknowledgement
@@ -56,9 +56,6 @@ Conference on Informatics, Electronics & Vision (ICIEV), Dhaka,
 traffic accident data of N5 national highway in Bangladesh employing
 decision trees," 2017 IEEE Region 10 Humanitarian Technology
 Conference (R10-HTC), Dhaka, 2017, pp. 722-725.
-
-The authors read these papers and wanted to expand the literature for more recent datasets. These papers used datasets from 2001 to 2015, and the authors in this model used datasets from 2017-2020. Also, these papers give limited information about class Imbalances, which is very common in classifier problems like accident severity in Bangladesh. Also, in these papers, for decision trees, the authors did not provide all of the metrics for different classes of the target variable, which may lead to poor performance in minority classes even though the accuracy is high.
-
 
 ## Authors
 
