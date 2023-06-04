@@ -8,34 +8,23 @@ In this project I analyzed Accident Data from Accident Research Institute in Ban
 
 # Workflow
 #### 1. Data Collection from Accident Research Institute, BUET
-#### 2. Data Preprocessing
-    - Data Cleaning
-    - Irrelevant Features Elimination (initial)
-    - Preparation of final dataset with 26 Features from more than 60 features
-    - Decoding the dataset and preparation of processed dataset
-    - Exploratory Data Analysis (EDA)
-    - Final Feature Selection using Chi-Squared Feature Selection
-        - For Target Variable Label Encoding
-        - For independent variables one-hot encoding with drop="first"
 
-    - Preparation of final classification dataset for Machine Learning Model
+#### 2. Data Preprocessing
 
 #### 3. Encoding
-    - For Target Variable Label Encoding
-    - For independent variables one-hot encoding with drop="first"
 
 #### 4. Model training and testing
-    - 80% data for training and 20% data for testing
+
 #### 5. Machine Learning Model Preparation using Decision tree
-    - first classifier model is created for full depth of the tree
+
 #### 6. Model Evaluation and Checking for Overfitting/Underfitting Conditions
-    - Checking difference between training and testing accuracy
+
 #### 7. Hyperparameter Tuning
-    - Changing hyperparameters of decision tree like max_depth, max_sample_split, max_sample_leaf, criterion
+
 #### 8. Performance Evaluation from Classification Report
-    - Sensitivity, Specificity, AUC, Recall, Precision, f1 all are evaluated
+
 #### 9. Random Oversampling for Target Variables Minority class to mitigate class imbalances
-    - Oversampling for Minority Class with different combination, Majority Class (1184 records) and Minority Class (314 records)
+
 #### 10. Repeat the process from step- 4 untill good model performance
 
 ## Acknowledgement
