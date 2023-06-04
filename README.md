@@ -69,9 +69,9 @@ The authors read these papers and wanted to expand the literature for more recen
 ## Datasets
 
 - [Accident Research Institute, Bangladesh University of Engineering and Technology (BUET)](https://ari.buet.ac.bd/)
+
+
 ## Authors Contribution
-
-
 Borhan Uddin Rabbani- Coding, Model Preparation, Literature Study
 
-B.M Tazbiul Anik- ML Model Review
+B.M Tazbiul Anik- ML Model Review, Raw Data Collection
