@@ -27,12 +27,7 @@ y_test_encoded = le.transform(y_test)
 
 from sklearn.tree import DecisionTreeClassifier
 
-clf = DecisionTreeClassifier()
-
-# clf = DecisionTreeClassifier(max_depth=5, min_samples_split=2, min_samples_leaf=2,criterion="gini",class_weight=class_weights)
-
-
-# clf = DecisionTreeClassifier(ccp_alpha= 0.0476, class_weight=class_weights)
+clf = DecisionTreeClassifier(random_state=42)
 
 clf.fit(X_train_encoded, y_train_encoded)
 
