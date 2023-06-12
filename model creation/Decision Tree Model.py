@@ -55,3 +55,22 @@ from sklearn.metrics import classification_report
 cr = classification_report(y_test_encoded, y_pred, zero_division=0)
 
 print(cr)
+
+# Seperate sensitivity and specificity for both classes
+
+sensitivity = cm.diagonal() / cm.sum(axis=1)
+
+
+specificity = []
+num_classes = len(le.classes_)
+for i in range(num_classes):
+    tn = np.delete(cm, i, axis=0).sum()  
+    fp = np.delete(cm[:, i], i, axis=0).sum()  
+    specificity.append(tn / (tn + fp))
+
+
+for i, class_name in enumerate(le.classes_):
+    print(f"Class: {class_name}")
+    print(f"Sensitivity: {sensitivity[i]}")
+    print(f"Specificity: {specificity[i]}")
+    print()
