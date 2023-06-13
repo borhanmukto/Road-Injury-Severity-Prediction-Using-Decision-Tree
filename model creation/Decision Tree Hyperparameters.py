@@ -1,19 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import pandas as pd
 import numpy as np
 
 df = pd.read_csv(r"D:\Accident Prediction\Github Repo Decision Tree\final_accident_data.csv")
-
-df
-
-
-# In[11]:
-
 
 X= df.drop(columns="Accident severity")
 y= df["Accident severity"]
@@ -51,10 +40,6 @@ print("Training Accuracy:", training_accuracy)
 print("Testing Accuracy:", testing_accuracy)
 print("Difference: ", diff)
 
-
-# In[14]:
-
-
 # # Confusion Matrix
 
 from sklearn.metrics import confusion_matrix
@@ -63,11 +48,6 @@ confusion_matrix = confusion_matrix(y_test_encoded, y_pred)
 
 print(f"Confusion Matrix: \n", confusion_matrix)
 
-
-
-# In[21]:
-
-
 # # Classification Report
 
 from sklearn.metrics import classification_report
@@ -75,4 +55,3 @@ from sklearn.metrics import classification_report
 cr = classification_report(y_test_encoded, y_pred)
 
 print(cr)
-
