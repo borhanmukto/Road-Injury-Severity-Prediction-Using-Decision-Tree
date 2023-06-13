@@ -1,18 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[24]:
 
 
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("balanced_oversampled_accident_data_1180_942.csv")
-
-df
-
-
-# In[26]:
+df = pd.read_csv("final_accident_data.csv")
 
 
 from sklearn.model_selection import train_test_split
@@ -44,18 +35,12 @@ y_train_encoded = le.fit_transform(y_train)
 y_test_encoded = le.transform(y_test)
 
 
-# In[45]:
-
-
 from sklearn.tree import DecisionTreeClassifier
 
 # Instantiate the DecisionTreeClassifier
 
 
 clf = DecisionTreeClassifier(max_depth=7, min_samples_split=2, min_samples_leaf=5,criterion="gini", random_state=50)
-
-# clf = DecisionTreeClassifier(max_depth=5, min_samples_split=2, min_samples_leaf=4,criterion="entropy")
-
 
 # Fit the classifier to the training data
 clf.fit(X_train_encoded, y_train_encoded)
@@ -74,9 +59,6 @@ print("Testing Accuracy:", testing_accuracy)
 diff = abs(training_accuracy - testing_accuracy)
 
 print(f"Difference: ", diff)
-
-
-# In[47]:
 
 
 from sklearn.metrics import classification_report
