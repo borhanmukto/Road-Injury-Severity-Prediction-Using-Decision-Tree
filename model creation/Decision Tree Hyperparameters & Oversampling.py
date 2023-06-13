@@ -6,6 +6,26 @@ import numpy as np
 df = pd.read_csv("final_accident_data.csv")
 
 
+# Oversampling Coding Starts
+
+
+df['Accident severity'].value_counts()
+df_sampled_1 = df[df['Accident severity'] == "Non Fetal Injury"].copy()
+np.random.seed(42)
+df_new_1 = df_sampled_1.sample(942, replace=True)
+df_sampled_0 = df[df["Accident severity"]=="Fetal Injury"].copy()
+np.random.seed(42)
+df_new_0 = df_sampled_0
+
+df_combined = pd.concat([df_new_0, df_new_1])
+
+df_combined = df_combined.sample(frac=1).reset_index(drop=True)
+
+df_combined.to_csv("balanced_oversampled_accident_data_1180_942.csv", index=False)
+# Oversampling coding Ends
+
+df = pd.read_csv("balanced_oversampled_accident_data_1180_942.csv")
+
 from sklearn.model_selection import train_test_split
 
 X= df.drop(columns="Accident severity")
