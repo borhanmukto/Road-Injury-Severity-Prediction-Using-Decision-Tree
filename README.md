@@ -3,7 +3,7 @@
 
 
 
-In this project I analyzed Accident Data from Accident Research Institute in Bangladesh with recent datasets. Using this dataset I have prepared a model using Supervised Machine Learning Technics, Decision Tree.
+In this project, I analyzed Accident Data from Accident Research Institute in Bangladesh with recent datasets. Using this dataset I have prepared a model using Supervised Machine Learning Technics, Decision Tree, Random Forest, KNN, Naive Bayes, Logistic Regression, Support Vector Machines, XGBoost, AdaBoost
 
 
 
