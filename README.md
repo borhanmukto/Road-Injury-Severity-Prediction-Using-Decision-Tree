@@ -1,5 +1,5 @@
 
-# Accident Severity Prediction Using Decision Tree Classifier
+# Accident Severity Prediction Using Machine Learning Algorithms
 
 
 
